@@ -14,6 +14,8 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - DZNEmptyDataSet (1.8.1)
+  - FLKAutoLayout (1.0.0)
   - FXBlurView (1.6.4)
   - ISO8601DateFormatterValueTransformer (0.6.1):
     - RKValueTransformers (~> 1.1.0)
@@ -53,6 +55,8 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - DZNEmptyDataSet
+  - FLKAutoLayout
   - FXBlurView (~> 1.6.4)
   - JPush-iOS-SDK (~> 2.1.9)
   - MJExtension (~> 3.0.13)
@@ -64,6 +68,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FLKAutoLayout: 106b14dbae09d32c6730190f4e78a959759ba4a4
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
   ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
   JPush-iOS-SDK: c74e4f8d066dacf27c3d37257ee20157e44c316c
@@ -77,6 +83,6 @@ SPEC CHECKSUMS:
   TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
   TZImagePickerController: d3b16a1ab3393b251a23fbb22ac2d6bc83a50d5f
 
-PODFILE CHECKSUM: ce1774182673e082ee45795fcb45078ad012c5e0
+PODFILE CHECKSUM: 874b9a222039e091de2b3c86f0642df54c047e4c
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.0

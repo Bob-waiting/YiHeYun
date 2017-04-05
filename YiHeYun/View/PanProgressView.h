@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface PanProgressView : UIView
+
 - (id)initWithFrame:(CGRect)frame andUnit:(NSString *)unit;
+
 @property (nonatomic , copy)NSString *title;
 @property (nonatomic , copy)void (^cancleSlect)();
 @property (nonatomic , copy)void (^sureSlect)(NSString *,NSString *);
-
-
 
 @end

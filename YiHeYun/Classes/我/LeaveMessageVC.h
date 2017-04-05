@@ -1,0 +1,13 @@
+//
+//  LeaveMessageVC.h
+//  YiHeYun
+//
+//  Created by Ink on 2017/3/29.
+//  Copyright © 2017年 yhy. All rights reserved.
+//
+
+#import "BaseVC.h"
+
+@interface LeaveMessageVC : BaseVC
+
+@end

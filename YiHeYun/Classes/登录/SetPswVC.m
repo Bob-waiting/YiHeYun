@@ -26,6 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
++ (SetPswVC *)storyboardInstance {
+  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+  return [storyboard instantiateViewControllerWithIdentifier:@"SetPswVC"];
+}
+
 /*
 #pragma mark - Navigation
 

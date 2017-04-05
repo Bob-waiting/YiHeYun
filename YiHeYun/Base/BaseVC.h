@@ -61,4 +61,6 @@
  */
 - (void)startTimeCount:(UIButton *)l_timeButton;
 
+- (void)cancelTimeCount;
+
 @end

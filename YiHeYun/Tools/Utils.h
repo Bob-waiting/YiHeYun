@@ -152,4 +152,9 @@
  */
 + (NSString *)getDateAccordingTime:(NSString *)aTime formatStyle:(NSString *)formate;
 
+/*!
+ *  @brief 中文转英文
+ */
++ (NSString *)transform:(NSString *)chinese;
+
 @end

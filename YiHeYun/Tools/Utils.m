@@ -388,4 +388,13 @@
     return[formatter stringFromDate:nowDate];
 }
 
++ (NSString *)transform:(NSString *)chinese {
+    
+    NSMutableString *pinyin = [chinese mutableCopy];
+    CFStringTransform((__bridge CFMutableStringRef)pinyin, NULL, kCFStringTransformMandarinLatin, NO);
+    CFStringTransform((__bridge CFMutableStringRef)pinyin, NULL, kCFStringTransformStripCombiningMarks, NO);
+    NSLog(@"%@", pinyin);
+    return [pinyin uppercaseString];
+}
+
 @end
