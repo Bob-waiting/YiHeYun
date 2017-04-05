@@ -38,6 +38,15 @@ NSMutableArray *_photoArray;
 
 -(void)initView
 {
+    UIButton *rightButton=[UIButton buttonWithType:UIButtonTypeCustom];
+    [rightButton setFrame:CGRectMake(0, 0, 40, 44)];
+    [rightButton setTitle:@"保存" forState:UIControlStateNormal];
+    [rightButton.titleLabel setFont:[UIFont systemFontOfSize:18]];
+    [rightButton addTarget:self action:@selector(doSaveCase:) forControlEvents:UIControlEventTouchUpInside];
+    [rightButton setTitleColor:RGB(0x1283fe) forState:UIControlStateNormal];
+    UIBarButtonItem *rightItem=[[UIBarButtonItem alloc]initWithCustomView:rightButton];
+    
+    self.navItem.rightBarButtonItem=rightItem;
     bgButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 64, WIDTH, HEIGHT-64)];
     bgButton.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.6];
     [bgButton addTarget:self action:@selector(hiddenAllView) forControlEvents:UIControlEventTouchUpInside];
@@ -155,7 +164,18 @@ NSMutableArray *_photoArray;
 
 -(void)doClickDeleteButton:(id)sender
 {
+    UIAlertController *alertVC=[UIAlertController alertControllerWithTitle:@"提示" message:@"你确定放弃添加病历吗" preferredStyle:UIAlertControllerStyleAlert];
     
+    UIAlertAction *cancelAction=[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    [alertVC addAction:cancelAction];
+    
+    UIAlertAction *sureAction=[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [alertVC dismissViewControllerAnimated:YES completion:nil];
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
+    [alertVC addAction:sureAction];
+    
+    [self presentViewController:alertVC animated:YES completion:nil];
 }
 
 - (void)hiddenAllView{
@@ -182,7 +202,7 @@ NSMutableArray *_photoArray;
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     if (_photoArray.count<=0)
-        return 1;
+        return 4;
     return _photoArray.count;
 }
 
@@ -191,7 +211,8 @@ NSMutableArray *_photoArray;
     static NSString *cellId=@"photoId";
     addCase_PhotoCollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
     if (_photoArray.count<=0) {
-        cell.image=[UIImage imageNamed:@"photo"];
+        cell.photoImage.backgroundColor=[UIColor lightGrayColor];
+        //cell.image=[UIImage imageNamed:@"photo"];
     }else
     {
         cell.image=[_photoArray objectAtIndex:indexPath.row];

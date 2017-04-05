@@ -19,7 +19,9 @@
     [super viewDidLoad];
     [self setNavBars];
     //_detailImage.image=[self imageByScalingAndCroppingForSize:CGSizeMake(360, 331) withSourceImage:self.img] ;
-    _detailImage.image=[self OriginImage:self.img scaleToSize:CGSizeMake(360, 331)];
+    _detailImage.image=self.img;
+   // CGSize size=CGSizeMake(_detailImage.frame.size.width, (_detailImage.frame.size.width/self.img.size.width)*self.img.size.height);
+    //_detailImage.image=[self OriginImage:self.img scaleToSize:size];
     // Do any additional setup after loading the view.
 }
 

@@ -183,7 +183,7 @@
         <!--添加病历-->
         <scene sceneID="rhe-kQ-wmI">
             <objects>
-                <viewController id="9nq-1k-9ux" customClass="AddCaseVC" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="9nq-1k-9ux" customClass="AddCaseVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DsT-kS-ICo"/>
                         <viewControllerLayoutGuide type="bottom" id="LMG-BI-eQK"/>
@@ -199,7 +199,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVC-hu-jCR">
                                         <rect key="frame" x="15" y="0.0" width="100" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -287,6 +287,7 @@
                         <outlet property="photoCollectionView" destination="A7R-iA-emI" id="xhE-Oy-IVe"/>
                         <outlet property="timeButton" destination="nFS-wM-oVk" id="oVd-nE-Fng"/>
                         <outlet property="timeLable" destination="1DI-Uh-0hs" id="ScN-8b-D58"/>
+                        <segue destination="8vB-Xd-XT1" kind="show" id="t2e-yB-vbY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6MF-WX-xCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -296,7 +297,7 @@
         <!--Add Case photo Detail View Controller-->
         <scene sceneID="kdh-2I-eQT">
             <objects>
-                <viewController storyboardIdentifier="addCase_photoDetail" id="8vB-Xd-XT1" customClass="addCase_photoDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addCase_photoDetail" hidesBottomBarWhenPushed="YES" id="8vB-Xd-XT1" customClass="addCase_photoDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c8Z-6X-jbE"/>
                         <viewControllerLayoutGuide type="bottom" id="8FX-NF-ndv"/>
@@ -305,9 +306,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cgP-PA-xOb">
-                                <rect key="frame" x="7" y="109" width="360" height="331"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cgP-PA-xOb">
+                                <rect key="frame" x="7" y="91" width="360" height="556"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -318,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FcL-e4-rFU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3137" y="2729"/>
+            <point key="canvasLocation" x="3136.8000000000002" y="2728.785607196402"/>
         </scene>
     </scenes>
     <resources>
