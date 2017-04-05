@@ -21,6 +21,20 @@
 
 @implementation SelectDateView
 
+-(id)initWithMode:(DisplayMode)mode andFrame:(CGRect)frame
+{
+    self= [super initWithFrame:frame];
+    if (self) {
+        self.layer.cornerRadius = 3;
+        self.layer.masksToBounds = YES;
+        self.backgroundColor = [UIColor whiteColor];
+        viewWidth = self.frame.size.width;
+        viewHeight = self.frame.size.height;
+        _mode=mode;
+        [self initView];
+    }
+    return self;
+}
 - (id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
@@ -44,7 +58,12 @@
 
     datePick = [[UIDatePicker alloc]initWithFrame:CGRectMake(0, 30, viewWidth, 180)];
     [datePick addTarget:self action:@selector(showDate) forControlEvents:UIControlEventValueChanged];
+    if (_mode==DisplayDate) {
+        datePick.datePickerMode=UIDatePickerModeDate;
+    }else
+    {
     datePick.datePickerMode = UIDatePickerModeDateAndTime;
+    }
     datePick.minimumDate = [NSDate date];
 //    datePick.locale = [NSLocale localeWithLocaleIdentifier:@"en_GB"];
     [self addSubview:datePick];
@@ -53,7 +72,12 @@
 
     NSDate *date = [datePick date];
     NSDateFormatter *dd = [[NSDateFormatter alloc]init];
+    if (_mode==DisplayDate) {
+         dd.dateFormat = @"yyyy-MM-dd";
+    }else
+    {
     dd.dateFormat = @"yyyy-MM-dd EEE HH:mm";
+    }
     NSString *dateStr = [dd stringFromDate:date];
     titleLB.text = dateStr;
 
@@ -90,7 +114,12 @@
 
     NSDate *date = [datePick date];
     NSDateFormatter *dd = [[NSDateFormatter alloc]init];
+    if (_mode==DisplayDate) {
+        dd.dateFormat = @"yyyy-MM-dd";
+    }else
+    {
     dd.dateFormat = @"yyyy-MM-dd EEE HH:mm";
+    }
     NSString *dateStr = [dd stringFromDate:date];
     if (_getSlectDate) {
         _getSlectDate(dateStr);
@@ -103,7 +132,13 @@
 - (void)showDate{
     NSDate *date = [datePick date];
     NSDateFormatter *dd = [[NSDateFormatter alloc]init];
-    dd.dateFormat = @"yyyy-MM-dd EEE HH:mm";
+    if (_mode==DisplayDate) {
+        dd.dateFormat = @"yyyy-MM-dd";
+    }else
+    {
+        dd.dateFormat = @"yyyy-MM-dd EEE HH:mm";
+    }
+
     NSString *dateStr = [dd stringFromDate:date];
     titleLB.text = dateStr;
 }

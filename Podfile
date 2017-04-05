@@ -13,5 +13,6 @@ pod 'TZImagePickerController', '~> 1.6.4'
 pod 'FXBlurView', '~> 1.6.4'
 pod 'JPush-iOS-SDK', '~> 2.1.9'
 pod 'RestKit'
+pod 'QBImagePickerController', '~> 3.4.0'
 
 end

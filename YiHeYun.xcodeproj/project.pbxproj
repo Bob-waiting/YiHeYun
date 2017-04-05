@@ -98,6 +98,9 @@
 		20939B791E8880BA00012664 /* UIImage+GradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 20939B781E8880BA00012664 /* UIImage+GradientColor.m */; };
 		20E3E3971E894E3E00FC8A72 /* ZBPieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E3E3921E894E3E00FC8A72 /* ZBPieView.m */; };
 		3F83B1EC07029C604D2C6AB1 /* libPods-YiHeYun.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C52900FDCF0578B3A78110 /* libPods-YiHeYun.a */; };
+		5CAA4BA91E94814A0001120B /* addCase_PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAA4BA71E94814A0001120B /* addCase_PhotoCollectionViewCell.m */; };
+		5CAA4BAA1E94814A0001120B /* addCase_PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CAA4BA81E94814A0001120B /* addCase_PhotoCollectionViewCell.xib */; };
+		5CAA4BAD1E9481B30001120B /* addCase_photoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAA4BAC1E9481B30001120B /* addCase_photoDetailViewController.m */; };
 		811B51011E8A8BDC00A7C717 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811B50FF1E8A8BDC00A7C717 /* Me.storyboard */; };
 		811B51041E8AB39200A7C717 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51031E8AB39200A7C717 /* SettingVC.m */; };
 		811B51071E8AB48C00A7C717 /* HealthRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51061E8AB48C00A7C717 /* HealthRecordVC.m */; };
@@ -285,6 +288,11 @@
 		20E3E3911E894E3E00FC8A72 /* ZBPieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBPieView.h; sourceTree = "<group>"; };
 		20E3E3921E894E3E00FC8A72 /* ZBPieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBPieView.m; sourceTree = "<group>"; };
 		5954609EEFCA5A37A0398014 /* Pods-YiHeYun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiHeYun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YiHeYun/Pods-YiHeYun.debug.xcconfig"; sourceTree = "<group>"; };
+		5CAA4BA61E94814A0001120B /* addCase_PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addCase_PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		5CAA4BA71E94814A0001120B /* addCase_PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addCase_PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		5CAA4BA81E94814A0001120B /* addCase_PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = addCase_PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		5CAA4BAB1E9481B30001120B /* addCase_photoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addCase_photoDetailViewController.h; sourceTree = "<group>"; };
+		5CAA4BAC1E9481B30001120B /* addCase_photoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addCase_photoDetailViewController.m; sourceTree = "<group>"; };
 		609D179F597C6764A723B63F /* Pods-YiHeYun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiHeYun.release.xcconfig"; path = "Pods/Target Support Files/Pods-YiHeYun/Pods-YiHeYun.release.xcconfig"; sourceTree = "<group>"; };
 		811B51001E8A8BDC00A7C717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Me.storyboard; sourceTree = "<group>"; };
 		811B51021E8AB39200A7C717 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
@@ -820,8 +828,7 @@
 				811B510C1E8AB4BE00A7C717 /* ContactUsVC.m */,
 				811B510E1E8AB4D900A7C717 /* FeedbackVC.h */,
 				811B510F1E8AB4D900A7C717 /* FeedbackVC.m */,
-				811B51111E8AB58500A7C717 /* AddCaseVC.h */,
-				811B51121E8AB58500A7C717 /* AddCaseVC.m */,
+				5CAA4BA51E947E170001120B /* 添加病历 */,
 				811B51141E8AB61500A7C717 /* HelpVC.h */,
 				811B51151E8AB61500A7C717 /* HelpVC.m */,
 				811B51171E8AB62F00A7C717 /* AboutUsVC.h */,
@@ -847,6 +854,20 @@
 				D6C52900FDCF0578B3A78110 /* libPods-YiHeYun.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CAA4BA51E947E170001120B /* 添加病历 */ = {
+			isa = PBXGroup;
+			children = (
+				5CAA4BAB1E9481B30001120B /* addCase_photoDetailViewController.h */,
+				5CAA4BAC1E9481B30001120B /* addCase_photoDetailViewController.m */,
+				5CAA4BA61E94814A0001120B /* addCase_PhotoCollectionViewCell.h */,
+				5CAA4BA71E94814A0001120B /* addCase_PhotoCollectionViewCell.m */,
+				5CAA4BA81E94814A0001120B /* addCase_PhotoCollectionViewCell.xib */,
+				811B51111E8AB58500A7C717 /* AddCaseVC.h */,
+				811B51121E8AB58500A7C717 /* AddCaseVC.m */,
+			);
+			name = "添加病历";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -883,7 +904,7 @@
 				TargetAttributes = {
 					207242391E62B97100783CD4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 938EMAYW6W;
+						DevelopmentTeam = T7627X2GBU;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -913,6 +934,7 @@
 			files = (
 				207242FD1E62C2FB00783CD4 /* Sparkle.png in Resources */,
 				207243151E62C2FB00783CD4 /* star_full@2x.png in Resources */,
+				5CAA4BAA1E94814A0001120B /* addCase_PhotoCollectionViewCell.xib in Resources */,
 				2072430C1E62C2FB00783CD4 /* sline_@3x.png in Resources */,
 				2072430B1E62C2FB00783CD4 /* sline_@2x.png in Resources */,
 				207243161E62C2FB00783CD4 /* star_full@3x.png in Resources */,
@@ -941,7 +963,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D77C63C49B87B1D594FD24F0 /* [CP] Embed Pods Frameworks */ = {
@@ -996,8 +1018,10 @@
 				0434E1C61E729C660088D533 /* PanProgressView.m in Sources */,
 				2072433E1E62C9F500783CD4 /* BaseNC.m in Sources */,
 				207242FE1E62C2FB00783CD4 /* AEFlowLayoutView.m in Sources */,
+				5CAA4BA91E94814A0001120B /* addCase_PhotoCollectionViewCell.m in Sources */,
 				207243061E62C2FB00783CD4 /* JHHJView.m in Sources */,
 				811B51131E8AB58500A7C717 /* AddCaseVC.m in Sources */,
+				5CAA4BAD1E9481B30001120B /* addCase_photoDetailViewController.m in Sources */,
 				207243091E62C2FB00783CD4 /* OptionsBarItem.m in Sources */,
 				207243071E62C2FB00783CD4 /* BottomLineView.m in Sources */,
 				207243311E62C34800783CD4 /* UILabel+Add.m in Sources */,
@@ -1196,7 +1220,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 938EMAYW6W;
+				DEVELOPMENT_TEAM = T7627X2GBU;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = YiHeYun/YiHeYun.pch;
 				INFOPLIST_FILE = YiHeYun/Info.plist;
@@ -1219,7 +1243,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 938EMAYW6W;
+				DEVELOPMENT_TEAM = T7627X2GBU;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = YiHeYun/YiHeYun.pch;
 				INFOPLIST_FILE = YiHeYun/Info.plist;

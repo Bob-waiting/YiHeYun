@@ -7,7 +7,7 @@
 //
 
 #import "BaseVC.h"
-
-@interface AddCaseVC : BaseVC
+#import "QBImagePickerController.h"
+@interface AddCaseVC : BaseVC <UICollectionViewDelegate,UICollectionViewDataSource,QBImagePickerControllerDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 @end
