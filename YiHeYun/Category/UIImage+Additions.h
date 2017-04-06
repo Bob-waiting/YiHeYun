@@ -28,4 +28,6 @@
 //UIImage左右两点拉伸
 -(UIImage *)imageStretchToSize:(CGSize)newSize withX1:(float)x1 withX2:(float)x2 y:(float)y;
 
+-(UIImage*)imageWithCornerRadius:(CGFloat)radius;
+
 @end

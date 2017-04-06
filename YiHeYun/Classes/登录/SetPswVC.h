@@ -14,5 +14,5 @@
 @property (weak, nonatomic) IBOutlet UITextField *confirmPswTF;
 
 - (IBAction)submitAction:(id)sender;
-
++ (SetPswVC *)storyboardInstance;
 @end

@@ -21,7 +21,8 @@
 
 #pragma mark - ---------------接口名称---------------
 
-#define URL_Login @"YH10104" //获取启动图
+#define URL_Login @"YH10104" //登录
+#define URL_Register @"YH10103" //注册
 
 
 #endif /* ServerUrl_h */

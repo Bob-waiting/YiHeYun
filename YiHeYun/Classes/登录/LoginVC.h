@@ -10,6 +10,8 @@
 
 @interface LoginVC : BaseVC
 
+@property (nonatomic,copy) dispatch_block_t buttonBlock;
+
 @property (weak, nonatomic) IBOutlet UITextField *accountTF;
 
 @property (weak, nonatomic) IBOutlet UITextField *psWTF;

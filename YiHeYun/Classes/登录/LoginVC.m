@@ -53,6 +53,12 @@
             [Utils showToast:@"登录成功"];
             
             [[UserInfo share] setUserInfo:responseData];
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:kLoginSuccNotification object:nil];
+            
+            if (self.buttonBlock) {
+                self.buttonBlock();
+            }
         } else {
             [Utils showToast:@"登录失败"];
         }

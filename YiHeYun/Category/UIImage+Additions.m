@@ -155,4 +155,16 @@
     return newImage;
 }
 
+
+-(UIImage*)imageWithCornerRadius:(CGFloat)radius{
+
+  CGRect rect = (CGRect){0.f,0.f,self.size};
+  UIGraphicsBeginImageContextWithOptions(self.size, NO, [UIScreen mainScreen].scale);
+  [[UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:radius] addClip];
+  [self drawInRect:rect];
+  UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+  UIGraphicsEndImageContext();
+  return image;
+}
+
 @end

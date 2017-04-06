@@ -7,8 +7,7 @@
 //
 
 #import "SetUpVC.h"
-
-
+#import "ElecFenceVC.h"
 
 @interface SetUpVC ()
 
@@ -52,7 +51,12 @@
 - (IBAction)longSitRemindAction:(id)sender {
 }
 
+//电子围栏
 - (IBAction)elecFenceAction:(id)sender {
+    
+    ElecFenceVC *vc = [[ElecFenceVC alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)WeatherForcastAction:(id)sender {
@@ -69,4 +73,9 @@
 
 - (IBAction)bloodPressureAction:(id)sender {
 }
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 @end
