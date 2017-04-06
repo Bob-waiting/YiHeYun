@@ -15,5 +15,6 @@ pod 'JPush-iOS-SDK', '~> 2.1.9'
 pod 'RestKit'
 pod 'FLKAutoLayout'
 pod 'DZNEmptyDataSet'
+pod 'QBImagePickerController', '~> 3.4.0'
 
 end

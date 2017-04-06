@@ -123,6 +123,10 @@
 		20D656121E93D54F004166B7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D656111E93D54F004166B7 /* OpenGLES.framework */; };
 		20E3E3971E894E3E00FC8A72 /* ZBPieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E3E3921E894E3E00FC8A72 /* ZBPieView.m */; };
 		3F83B1EC07029C604D2C6AB1 /* libPods-YiHeYun.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C52900FDCF0578B3A78110 /* libPods-YiHeYun.a */; };
+		5CCBE1AF1E95E8E000AAEC46 /* addCase_PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCBE1A91E95E8E000AAEC46 /* addCase_PhotoCollectionViewCell.m */; };
+		5CCBE1B01E95E8E000AAEC46 /* addCase_PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CCBE1AA1E95E8E000AAEC46 /* addCase_PhotoCollectionViewCell.xib */; };
+		5CCBE1B11E95E8E000AAEC46 /* addCase_photoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCBE1AC1E95E8E000AAEC46 /* addCase_photoDetailViewController.m */; };
+		5CCBE1B21E95E8E000AAEC46 /* AddCaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCBE1AE1E95E8E000AAEC46 /* AddCaseVC.m */; };
 		811B51011E8A8BDC00A7C717 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811B50FF1E8A8BDC00A7C717 /* Me.storyboard */; };
 		811B51041E8AB39200A7C717 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51031E8AB39200A7C717 /* SettingVC.m */; };
 		811B51101E8AB4D900A7C717 /* FeedbackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B510F1E8AB4D900A7C717 /* FeedbackVC.m */; };
@@ -349,6 +353,13 @@
 		20E3E3911E894E3E00FC8A72 /* ZBPieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBPieView.h; sourceTree = "<group>"; };
 		20E3E3921E894E3E00FC8A72 /* ZBPieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBPieView.m; sourceTree = "<group>"; };
 		5954609EEFCA5A37A0398014 /* Pods-YiHeYun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiHeYun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YiHeYun/Pods-YiHeYun.debug.xcconfig"; sourceTree = "<group>"; };
+		5CCBE1A81E95E8E000AAEC46 /* addCase_PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addCase_PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		5CCBE1A91E95E8E000AAEC46 /* addCase_PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addCase_PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		5CCBE1AA1E95E8E000AAEC46 /* addCase_PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = addCase_PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		5CCBE1AB1E95E8E000AAEC46 /* addCase_photoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addCase_photoDetailViewController.h; sourceTree = "<group>"; };
+		5CCBE1AC1E95E8E000AAEC46 /* addCase_photoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addCase_photoDetailViewController.m; sourceTree = "<group>"; };
+		5CCBE1AD1E95E8E000AAEC46 /* AddCaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCaseVC.h; sourceTree = "<group>"; };
+		5CCBE1AE1E95E8E000AAEC46 /* AddCaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCaseVC.m; sourceTree = "<group>"; };
 		609D179F597C6764A723B63F /* Pods-YiHeYun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiHeYun.release.xcconfig"; path = "Pods/Target Support Files/Pods-YiHeYun/Pods-YiHeYun.release.xcconfig"; sourceTree = "<group>"; };
 		811B51001E8A8BDC00A7C717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Me.storyboard; sourceTree = "<group>"; };
 		811B51021E8AB39200A7C717 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
@@ -928,6 +939,7 @@
 		207243451E62CE0600783CD4 /* 我 */ = {
 			isa = PBXGroup;
 			children = (
+				5CCBE1A71E95E8AA00AAEC46 /* 添加病历 */,
 				818502871E94A2E500CED56D /* 健康档案 */,
 				81BB79FD1E90958200BED061 /* 朋友 */,
 				2057885D1E8E430500885791 /* 个人信息 */,
@@ -1007,6 +1019,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5CCBE1A71E95E8AA00AAEC46 /* 添加病历 */ = {
+			isa = PBXGroup;
+			children = (
+				5CCBE1A81E95E8E000AAEC46 /* addCase_PhotoCollectionViewCell.h */,
+				5CCBE1A91E95E8E000AAEC46 /* addCase_PhotoCollectionViewCell.m */,
+				5CCBE1AA1E95E8E000AAEC46 /* addCase_PhotoCollectionViewCell.xib */,
+				5CCBE1AB1E95E8E000AAEC46 /* addCase_photoDetailViewController.h */,
+				5CCBE1AC1E95E8E000AAEC46 /* addCase_photoDetailViewController.m */,
+				5CCBE1AD1E95E8E000AAEC46 /* AddCaseVC.h */,
+				5CCBE1AE1E95E8E000AAEC46 /* AddCaseVC.m */,
+			);
+			path = "添加病历";
+			sourceTree = "<group>";
+		};
 		818502831E949A7200CED56D /* SlideSwitch */ = {
 			isa = PBXGroup;
 			children = (
@@ -1081,7 +1107,7 @@
 				TargetAttributes = {
 					207242391E62B97100783CD4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = M2CBW36AQZ;
+						DevelopmentTeam = T7627X2GBU;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1110,6 +1136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				207242FD1E62C2FB00783CD4 /* Sparkle.png in Resources */,
+				5CCBE1B01E95E8E000AAEC46 /* addCase_PhotoCollectionViewCell.xib in Resources */,
 				2057886B1E8E431B00885791 /* address.plist in Resources */,
 				207243151E62C2FB00783CD4 /* star_full@2x.png in Resources */,
 				2072430C1E62C2FB00783CD4 /* sline_@3x.png in Resources */,
@@ -1196,6 +1223,7 @@
 				207242F61E62C2FB00783CD4 /* PPCounterEngine.m in Sources */,
 				0434E1C61E729C660088D533 /* PanProgressView.m in Sources */,
 				20D655EE1E93CE64004166B7 /* ElecFenceVC.m in Sources */,
+				5CCBE1B11E95E8E000AAEC46 /* addCase_photoDetailViewController.m in Sources */,
 				2072433E1E62C9F500783CD4 /* BaseNC.m in Sources */,
 				207242FE1E62C2FB00783CD4 /* AEFlowLayoutView.m in Sources */,
 				815398241E94E77F0036D7CD /* IndividualCaseVC.m in Sources */,
@@ -1223,6 +1251,7 @@
 				207243331E62C34800783CD4 /* UIView+Extension.m in Sources */,
 				207243351E62C34800783CD4 /* UITabBar+RedPoint.m in Sources */,
 				818502951E94CD1C00CED56D /* UserInfoVC.m in Sources */,
+				5CCBE1AF1E95E8E000AAEC46 /* addCase_PhotoCollectionViewCell.m in Sources */,
 				811B51191E8AB62F00A7C717 /* AboutUsVC.m in Sources */,
 				2071EF1E1E74F82C001020D7 /* NetworkManager.m in Sources */,
 				2072430A1E62C2FB00783CD4 /* OptionsBarView.m in Sources */,
@@ -1232,6 +1261,7 @@
 				207243011E62C2FB00783CD4 /* ImgScrollView.m in Sources */,
 				201CA2711E7571F400E7DFE7 /* ForgetPswVC.m in Sources */,
 				207242FC1E62C2FB00783CD4 /* AEEmitterButton.m in Sources */,
+				5CCBE1B21E95E8E000AAEC46 /* AddCaseVC.m in Sources */,
 				2072432F1E62C34800783CD4 /* UIImage+Color.m in Sources */,
 				207243191E62C2FB00783CD4 /* AEButton.m in Sources */,
 				81BB7A031E90980600BED061 /* AddFriendVC.m in Sources */,
@@ -1410,7 +1440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = M2CBW36AQZ;
+				DEVELOPMENT_TEAM = T7627X2GBU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1438,7 +1468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = M2CBW36AQZ;
+				DEVELOPMENT_TEAM = T7627X2GBU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

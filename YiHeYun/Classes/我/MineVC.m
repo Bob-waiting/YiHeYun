@@ -138,6 +138,7 @@
     UIButton *addCaseBtn = [[UIButton alloc]initWithFrame:CGRectMake(30, 10, WIDTH-60, 40)];
 
     [addCaseBtn setTitle:@"添加病历" forState:UIControlStateNormal];
+      [addCaseBtn addTarget:self action:@selector(doClick_addCase:) forControlEvents:UIControlEventTouchUpInside];
     [addCaseBtn setTitleColor:[UIColor colorWithRed:126/255.0 green:53/255.0 blue:150/255.0 alpha:1] forState:UIControlStateNormal];
     addCaseBtn.layer.borderWidth = 1;
     addCaseBtn.layer.borderColor = [UIColor colorWithRed:126/255.0 green:53/255.0 blue:150/255.0 alpha:1].CGColor;
@@ -195,6 +196,10 @@
   return cell;
 }
 
+-(void)doClick_addCase:(id)sender
+    {
+        [self performSegueWithIdentifier:@"addCase" sender:nil];
+    }
 #pragma mark -UITableViewDelegate
 //组头部的高度
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

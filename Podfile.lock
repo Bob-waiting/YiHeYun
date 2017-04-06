@@ -22,6 +22,7 @@ PODS:
   - JPush-iOS-SDK (2.1.9)
   - MJExtension (3.0.13)
   - MJRefresh (3.0.8)
+  - QBImagePickerController (3.4.0)
   - RealReachability (1.1.8):
     - RealReachability/Connection (= 1.1.8)
     - RealReachability/Ping (= 1.1.8)
@@ -61,6 +62,7 @@ DEPENDENCIES:
   - JPush-iOS-SDK (~> 2.1.9)
   - MJExtension (~> 3.0.13)
   - MJRefresh (~> 3.0.8)
+  - QBImagePickerController (~> 3.4.0)
   - RealReachability (~> 1.1.7)
   - RestKit
   - SDWebImage (~> 3.8.2)
@@ -75,6 +77,7 @@ SPEC CHECKSUMS:
   JPush-iOS-SDK: c74e4f8d066dacf27c3d37257ee20157e44c316c
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: fafde8f18f4afd66b434331a9beb67a6c0264056
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
   RealReachability: e6c8a2bbffa316006e8c282efc1ee2567d61a920
   RestKit: a0244db34e14ed9cf059fcee2be6733cc162c34a
   RKValueTransformers: e5ed67e3811229b616fe01bddeeafe3bb337b1b9
@@ -83,6 +86,6 @@ SPEC CHECKSUMS:
   TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
   TZImagePickerController: d3b16a1ab3393b251a23fbb22ac2d6bc83a50d5f
 
-PODFILE CHECKSUM: 874b9a222039e091de2b3c86f0642df54c047e4c
+PODFILE CHECKSUM: 0acef761930b05084c8e1698eae69b518998224e
 
 COCOAPODS: 1.2.0
